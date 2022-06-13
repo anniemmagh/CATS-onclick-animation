@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(#5e5555, #312f2f);
+    overflow: hidden;
+  }
+  .cat {
+    position: absolute;
+    background-image: url("https://i.pinimg.com/736x/65/3d/15/653d154cc6af793f43e68de83972f693.jpg");
+    background-size: cover;
+    border-radius: 80px;
+    animation: fall 3s linear infinite;
+  }
+  @keyframes fall {
+    0% {
+      transform: translate(50%, 50%);
+      opacity: 3;
+    }
+    100% {
+      transform: translate(50%, 1000%);
+      opacity: 3;
+    }
+  }
